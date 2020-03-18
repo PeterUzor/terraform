@@ -1,0 +1,23 @@
+{
+  "name": "lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "npm run build && cp -av node_modules ./dist && cd dist && zip -r example.zip ./ && cd .."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^13.9.1",
+    "@types/uuid": "^7.0.0"
+  },
+  "dependencies": {
+    "aws": "0.0.3-2",
+    "aws-sdk": "^2.640.0",
+    "uuid": "^7.0.2"
+  }
+}
